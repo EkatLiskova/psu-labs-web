@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<!--"Голова" страницы, здесь подключаются доп.инструменты (например, стили) -->
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/index.css">
+	</head>
+	<!--"Тело" страницы, здесь описаны все элементы, находящиеся на странице-->
+	<body>
+		<!--Заголовочная часть-->
+		<header>
+			<!--class - это атрибут, который задает "стиль" объекту-->
+			<div class="container">
+				<!-- nav - навигационные кнопки (на них можно нажать)-->
+				<nav class="nav-head">
+					<!--Тег div используется для разделения страницы, с той целью, чтобы каждому разделу задать свой собственный стиль-->
+					<div class="item-icon">
+						<p>Мини-почта</p>
+					</div>
+					<div class="item">
+						<p class="active-item"><a href="#">Письма</a></p>
+						<p><a href="#">Написать</a></p>
+					</div>
+					<div class="item-right">
+						<p><a href="#">Екатерина</a></p>
+						<p><a href="#">Выход</a></p>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--Основная часть-->
+		<main>
+			<div class="container">
+				<nav class="panel-titles">
+					<p class="item-letters">Письма</p>
+					<p class="incoming-letters">Входящие</p>
+				</nav>
+				<div class="main-content">
+					<nav class="letters-navigation">
+						<!-- ul - маркированный список элементов -->
+						<ul>
+							<li> <p> <a href="#">Непрочитанные</a> </p> </li>
+							<li class="active-letters-action"> <p> <a href="#">Входящие</a> </p></li>
+							<li> <p> <a href="#">Отправленные</a> </p> </li>
+						</ul>
+					</nav>
+					<section>
+						<!-- article - Раздел контента, который образует независимую часть документа или сайта, например, статья в журнале, запись в блоге, комментарий -->
+						<article>
+							<div class="message">
+								<div class="message-info">							
+									<img src="images/barsik2007.png" alt="avatar">
+									<h1>Barsik2007</h1>
+									<time datetime="2020-08-28">28.08.2020</time>
+								</div>
+								<h2>Собрание всех котиков</h2>
+								<p>Всем привет! Пересылаю распоряжение об организации всеобщего собрания.</p>
+							</div>
+						</article>
+						<article>
+							<div class="message">
+								<div class="message-info">
+									<img src="images/judith.png" alt="avatar">
+									<h1>Judith</h1>
+									<time datetime="2020-08-28">28.08.2020</time>
+								</div>
+								<h2>Красная точка</h2>
+								<p>Всем мяу! Сегодня утром была найдена красная точка на кухне. Я гналась за ней больше часа, но она сбежала. Продолжаю наблюдение. В этот раз она не уйдёт. Думаю, надо ещё раз проверить под холодильником. Всё, я убежала, тут опять бегает солнечное пятно!</p>
+							</div>
+						</article>
+						<article>
+							<div class="message">
+								<div class="message-info">
+									<img src="images/angry_boss.png" alt="avatar">
+									<h1>angry_boss</h1>
+									<time datetime="2020-08-26">26.08.2020</time>
+								</div>
+								<h2>Еда?</h2>
+								<p>Нам надо что-то делать с нехваткой еды! Я голодаю... Я так больше не могу...</p>
+							</div>	
+						</article>
+					</section>
+				</div>
+			</div>
+		</main>
+		<!--Завершающая часть (колонтинул)-->
+		<footer>
+			<div class="container footer__div">
+				<p>(C) Курс Web-программирования | ПГНИУ</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>

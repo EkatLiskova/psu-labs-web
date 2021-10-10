@@ -1,0 +1,187 @@
+@import "_fonts.css";
+
+body {
+	line-height: 1.25;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+body, .active-item {
+	margin: 0;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #96A1AB;
+	background-color: #ECECEC;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 0.5rem;
+}
+
+header {
+	background-color: #282E3A;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+article {
+	background-color: #282E3A;
+	border-radius: 0.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	color: #DBC7A6;
+	font-size: 1.25rem;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.25rem;
+}
+
+p {
+	margin: 0;
+	padding: 1rem;
+}
+
+img {
+	border-radius: 50%;
+	object-fit:cover;
+	width: 2.25rem;
+	height:2.25rem;
+	
+	margin-right: 0.5rem;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+footer {
+	margin-top: auto;
+	text-align: center;
+	background-color: #282E3A;
+}
+
+footer > div.container > p {
+	padding: 0;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: 1128px;
+}
+
+.panel-titles {
+	font-size: 1.25rem;
+}
+
+.item {
+	padding-left: 1rem;
+}
+
+
+.main-content, .nav-head > div {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-head, .panel-titles {
+	display: flex;
+	flex-direction: row;
+}
+
+.item-icon > *, .panel-titles > * {
+	padding-left: 0;
+}
+
+.item-icon {
+	color: #ECECEC;
+}
+
+.item-icon, .item-letters, .letters-navigation {
+	min-width: calc(1 / 6 * 100%);
+}
+
+.nav-head > :last-child {
+	margin-left: auto;
+}
+
+.nav-head > :last-child > :last-child {
+	padding-right: 0;
+}
+
+a:-webkit-any-link {  
+	text-decoration: none;
+	color: #96A1AB;
+}
+
+.letters-navigation {
+	margin-right: 1rem;
+}
+
+.active-letters-action {
+	background-color: #282E3A;
+}
+
+.message-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.message-info > time {
+	margin-left: auto;
+	align-self: flex-start;
+}
+
+.message {
+	padding: 1rem;
+}
+
+.message * {
+	line-height: 1.25;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	padding: 0;
+}
+
+section > article:first-child, .message-info {
+	margin-top: 0;
+}
+
+.message > p {
+	margin-bottom: 0;
+}
+
+section > article:first-child {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+section > article:last-child {
+	margin-top: 0;
+}
+
+li > p {
+	padding: 0;
+}
